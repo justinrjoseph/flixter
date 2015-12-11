@@ -15,10 +15,12 @@
 
 body {
 	margin-top: 50px;
+	background: url(concrete_seamless.png);
+	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
 .jumbotron {
-	background: url('jumbotron.jpg');
+	background: url(jumbotron.jpg);
 	height: 370px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -54,4 +56,8 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 .learn-more {
 	border-radius: 0;
+}
+
+.features {
+	margin-top: 20px;
 }
