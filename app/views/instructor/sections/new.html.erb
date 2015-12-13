@@ -1,0 +1,8 @@
+<div class="enhance-box col-xs-4 col-xs-offset-4">
+	<h1>Add a Section</h1>
+
+	<%= simple_form_for @section, url: instructor_course_sections_path(@course) do |f| %>
+		<%= f.input :title %>
+		<%= f.submit 'Add Section', class: 'btn btn-primary form-submit' %>
+	<% end %>
+</div><!-- /.enhance-box col-xs-4 col-xs-offset-4 -->

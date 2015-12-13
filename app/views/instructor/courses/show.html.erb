@@ -1,3 +1,17 @@
-<div class="enhance-box col-xs-4 col-xs-offset-4">
+<div class="enhance-box col-xs-10 col-xs-offset-1">
 	<h1 class="text-center"><%= @course.title %></h1><!-- /.text-center -->
+
+	<%= link_to 'Preview as Student', course_path(@course), class: 'btn btn-warning pull-right' %>
+
+	<div class="clear"></div><!-- /.clear -->
+
+	<div class="text-center">
+		<%= link_to 'Add Section', new_instructor_course_section_path(@course), class: 'btn btn-primary btn-lg new-section-btn' %>
+	</div><!-- /.text-center -->
+
+	<ul>
+		<% @course.sections.each do |section| %>
+		<li><%= section.title %></li>
+		<% end %>
+	</ul>
 </div><!-- /.enhance-box col-xs-4 col-xs-offset-4 -->

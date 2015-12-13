@@ -76,6 +76,9 @@ h1, h2, h3, h4, h5, h6, .navbar {
 	border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
 	margin-top: 20px;
 	padding: 10px;
+	h1 {
+		text-align: center;
+	}
 	h1, h2 {
 		margin: 10px 10px 20px 0;
 	}
@@ -89,7 +92,9 @@ input {
 	margin-top: 10px;
 }
 
-#wrap:after, .course:after {
+#wrap:after,
+.course:after,
+a.preview-btn:after {
 	content: "";
 	display: block;
 	height: 0;
@@ -111,6 +116,9 @@ input {
 	margin: 0 auto;
 }
 
-.administrate-btn {
+.administrate-btn,
+.new-section-btn {
 	margin-top: 20px;
 }
+
+.clear { clear: both; }
