@@ -83,3 +83,11 @@ h1, h2, h3, h4, h5, h6, .navbar {
 .form-submit {
 	margin-top: 10px;
 }
+
+#wrap:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
