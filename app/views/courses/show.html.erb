@@ -12,4 +12,20 @@
 	<div class="col-sm-8 col-xs-12">
 		<%= @course.description %>
 	</div><!-- /.col-sm-8 col-xs-12 -->
+
+	<div class="col-xs-12">
+		<% @course.sections.each do |section| %>
+		<div class="section">
+			<%= section.title %>
+			<% section.lessons.each do |lesson| %>
+			<div class="lesson">
+				<%= link_to lesson_path(lesson) do %>
+					<strong><%= lesson.title %></strong>
+					- <%= lesson.subtitle %>
+				<% end %>
+			</div><!-- /.lesson -->
+			<% end %>
+		</div><!-- /.section -->
+		<% end %>
+	</div><!-- /.col-xs-12 -->
 </div><!-- /.enhance-box col-xs-10 col-xs-offset-1 -->
