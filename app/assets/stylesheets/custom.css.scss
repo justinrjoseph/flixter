@@ -61,3 +61,25 @@ h1, h2, h3, h4, h5, h6, .navbar {
 .features {
 	margin-top: 20px;
 }
+
+.form-box {
+	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+	-webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+	box-shadow: 1px 1px 2px 0 #d0d0d0;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+	margin-top: 20px;
+	padding: 10px;
+	h1, h2 {
+		margin: 10px 10px 20px 0;
+	}
+}
+
+#user_email, #user_password, #user_password_confirmation, .form-submit {
+	margin-bottom: 10px;
+}
+
+.form-submit {
+	margin-top: 10px;
+}
