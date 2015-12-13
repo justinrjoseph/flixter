@@ -49,17 +49,20 @@ h1, h2, h3, h4, h5, h6, .navbar {
 	}
 }
 
-#jumbotron-magic, #jumbotron-illusionist, .learn-more {
+#jumbotron-magic,
+#jumbotron-illusionist,
+.learn-more,
+.features,
+.course-description {
 	margin-top: 20px;
+}
+
+#jumbotron-magic, #jumbotron-illusionist, .learn-more {
 	margin-bottom: 20px;
 }
 
 .learn-more {
 	border-radius: 0;
-}
-
-.features {
-	margin-top: 20px;
 }
 
 .form-box {
@@ -84,7 +87,7 @@ input {
 	margin-top: 10px;
 }
 
-#wrap:after {
+#wrap:after, .course:after {
 	content: "";
 	display: block;
 	height: 0;
