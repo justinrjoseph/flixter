@@ -19,6 +19,10 @@ body {
 	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
+h1, h2, h3, h4, h5, h6, .navbar {
+	margin: 0;
+}
+
 .jumbotron {
 	background: url(jumbotron.jpg);
 	height: 370px;
@@ -27,10 +31,6 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 	box-shadow: 0 3px 8px #2a2a2a;
-}
-
-h1, h2, h3, h4, h5, h6, .navbar {
-	margin: 0;
 }
 
 .frosty {
@@ -53,11 +53,13 @@ h1, h2, h3, h4, h5, h6, .navbar {
 #jumbotron-illusionist,
 .learn-more,
 .features,
-.course-description {
+.course-description, {
 	margin-top: 20px;
 }
 
-#jumbotron-magic, #jumbotron-illusionist, .learn-more {
+#jumbotron-magic,
+#jumbotron-illusionist,
+.learn-more {
 	margin-bottom: 20px;
 }
 
@@ -65,7 +67,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 	border-radius: 0;
 }
 
-.form-box {
+.enhance-box {
 	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
 	-webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
 	box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -101,4 +103,14 @@ input {
 	border-radius: 3px;
 	padding: 8px;
 	margin: 10px;
+}
+
+.course-cost {
+	display: block;
+	width: 42px;
+	margin: 0 auto;
+}
+
+.administrate-btn {
+	margin-top: 20px;
 }
