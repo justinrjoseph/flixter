@@ -1,10 +1,10 @@
 # encoding: utf-8
 
-class ImageUploader < CarrierWave::Uploader::Base
+class VideoUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
-  include CarrierWave::MiniMagick
+  # include CarrierWave::MiniMagick
 
   # Choose what kind of storage to use for this uploader:
   # storage :file
@@ -15,9 +15,6 @@ class ImageUploader < CarrierWave::Uploader::Base
   def store_dir
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
-
-  # Process files as they are uploaded:
-  process resize_to_fill: [800, 350]
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url
