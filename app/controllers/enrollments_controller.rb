@@ -11,7 +11,7 @@ class EnrollmentsController < ApplicationController
                 card: params[:stripeToken]
             )
             
-            charge = Stripe::Charge.create(
+            Stripe::Charge.create(
                 customer:    customer.id,
                 amount:      @amount,
                 description: 'Flixter Premium Content',
