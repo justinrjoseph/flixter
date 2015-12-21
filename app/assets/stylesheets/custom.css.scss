@@ -64,6 +64,10 @@ h1, h2, h3, h4, h5, h6, .navbar {
 	margin-bottom: 20px;
 }
 
+.next-lesson-btn {
+	margin-bottom: 20px;
+}
+
 .learn-more-btn {
 	border-radius: 0;
 }
@@ -72,7 +76,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 .course-description,
 .enroll-btn,
 .stripe-button-el,
-.glyphicon {
+.sections .glyphicon {
 	margin-top: 20px;
 }
 
@@ -110,7 +114,11 @@ input {
 #wrap:after,
 .course:after,
 a.preview-btn:after,
-.new-lesson-btn:after {
+.new-lesson-btn:after,
+.add-section:before,
+.section::after,
+.section-header:after,
+.lesson-header:after {
 	content: "";
 	display: block;
 	height: 0;
@@ -145,7 +153,8 @@ ul {
 	margin-top: 40px;
 }
 
-.section-title {
+.section-title,
+.new-lesson-btn {
 	margin-top: -12.5px;
 }
 
