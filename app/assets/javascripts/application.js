@@ -15,3 +15,31 @@
 //= require jquery_ujs
 //= require_tree .
 //= require jquery-ui
+$(function() {
+    $('.lessons').sortable({
+    	update: function( event, ui ) {
+    		$.ajax({
+    			type: 'PUT',
+    			url: ui.item.data('update-url'),
+    			dataType: 'json',
+    			data: { lesson: { row_order_position: ui.item.index() } }
+    		});
+    	}
+    });
+    
+    $('.sections').sortable({
+    	update: function( event, ui ) {
+    		$.ajax({
+    			type: 'PUT',
+    			url: ui.item.data('update-url'),
+    			dataType: 'json',
+    			data: { section: { row_order_position: ui.item.index() } }
+    		});
+    	}
+    });
+    
+    $('.new-lesson-btn').click(function(e) {
+    	var lesson_url = $(e.target).data('lesson-url');
+    	$('#new-lesson-form').attr('action', lesson_url);
+    });
+});

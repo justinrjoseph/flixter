@@ -56,10 +56,53 @@
 
 		<div id="footer">
 			<div class="container">
-				<ul>
-					<li><strong>Instructors</strong></li>
-					<li><%= link_to 'Teach a Course', new_instructor_course_path %></li>
-				</ul>
+				<div class="col-xs-12 col-sm-3">
+					<ul>
+						<li><strong>Instructors</strong></li>
+						<li><%= link_to 'Teach a Course', new_instructor_course_path %></li>
+						<li><%= link_to 'My Dashboard', dashboard_path %></li>
+					</ul>
+				</div>
+				
+				<div class="col xs-12 col-sm-3">
+					<ul>
+						<li><strong>About</strong></li>
+						<li><%= link_to 'Team', '#' %></li>
+						<li><%= link_to 'Careers', '#' %></li>
+						<li><%= link_to 'Privacy Policy', '#' %></li>
+					</ul>
+				</div>
+				
+				<div class="col xs-12 col-sm-3">
+					<ul>
+						<li><strong>Contact</strong></li>
+						<li>justin.joseph0@yahoo.com</li>
+						<li>123 Main St.</li>
+						<li>Columbus, OH, 12345</li>
+					</ul>
+				</div>
+				
+				<div class="col xs-12 col-sm-3 social">
+					<ul>
+						<li><strong>Social</strong></li>
+						<li>
+							<%= link_to 'https://github.com/millennialsforchrist' do %>
+								<%= image_tag 'github.png', class: 'social-button' %>
+							<% end %>
+						</li>
+						<li>
+							<%= link_to 'https://facebook.com/millennialsforchrist' do %>
+								<%= image_tag 'facebook.png', class: 'social-button' %>
+							<% end %>
+						</li>
+						<li>
+							<%= link_to 'https://twitter.com/Candid_Blog' do %>
+								<%= image_tag 'twitter.png', class: 'social-button' %>
+							<% end %>
+						</li>
+					</ul>
+				</div>
+				
 			</div><!-- /.container -->
 		</div><!-- /#footer -->
 
