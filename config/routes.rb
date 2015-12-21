@@ -1,4 +1,5 @@
 Flixter::Application.routes.draw do
+  get "dashboards/show"
   devise_for :users
 
   root 'static_pages#index'
@@ -18,5 +19,7 @@ Flixter::Application.routes.draw do
       resources :sections, only: [:new, :create]
     end
   end
+  
+  resource :dashboard, only: [:show]
   
 end

@@ -1,5 +1,7 @@
+$font-family: 'Helvetica Neue', Helvetica;
+
 .navbar, .navbar-brand {
-	font-family: 'Helvetica Neue', Helvetica;
+	font-family: $font-family;
 }
 
 .navbar {
@@ -38,7 +40,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 	color: white;
 	margin-top: 20px;
 	h1, h2 {
-		font-family: 'Helvetica Neue', Helvetica;
+		font-family: $font-family;
 		text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
 	}
 	h1 {
@@ -49,30 +51,35 @@ h1, h2, h3, h4, h5, h6, .navbar {
 	}
 }
 
-#jumbotron-magic,
-#jumbotron-illusionist,
-.learn-more,
-.features,
-.course-description, {
-	margin-top: 20px;
+.course-image {
+	margin: 20px auto;
 }
 
 #jumbotron-magic,
 #jumbotron-illusionist,
 .learn-more-btn,
-.course-image,
 .administrate-btn,
 .new-section-btn {
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
-.course-image {
-	margin-left: auto;
-	margin-right: auto;
+.learn-more-btn {
+	border-radius: 0;
 }
 
-.learn-more {
-	border-radius: 0;
+.features,
+.course-description,
+.enroll-btn,
+.stripe-button-el,
+.glyphicon {
+	margin-top: 20px;
+}
+
+.course-cost {
+	display: block;
+	width: 42px;
+	margin: 0 auto;
 }
 
 .enhance-box {
@@ -119,24 +126,7 @@ a.preview-btn:after,
 	margin: 10px;
 }
 
-.course-cost {
-	display: block;
-	width: 42px;
-	margin: 0 auto;
-}
-
-.administrate-btn,
-.new-section-btn,
-.enroll-btn,
-.stripe-button-el {
-	margin-top: 20px;
-}
-
 .clear { clear: both; }
-
-.glyphicon {
-	margin-top: 20px;
-}
 
 ul {
 	list-style: none;
@@ -170,7 +160,7 @@ ul {
 	background: black;
 	color: white;
 	margin: 10px;
-	font-family: 'Helvetica Neue', Helvetica;
+	font-family: $font-family;
 	font-weight: 100;
 	padding: 8px;
 	font-size: 15px;
@@ -196,7 +186,7 @@ ul {
 	height: 130px;
 	a {
 		color: white;
-		font-family: 'Helvetica Neue', Helvetica;
+		font-family: $font-family;
 		font-weight: 100;
 		font-size: 15px;
 		strong {
